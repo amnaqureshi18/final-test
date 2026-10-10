@@ -133,6 +133,7 @@
             cursor: pointer;
             transition: all 0.2s;
             font-size: 1.05rem;
+            pointer-events: auto !important;
         }
         .option-label:hover {
             background: #edf2f7;
@@ -141,10 +142,12 @@
         .option-label input {
             margin-left: 12px;
             transform: scale(1.2);
+            pointer-events: auto !important;
         }
         .option-label.locked {
             cursor: not-allowed;
             opacity: 0.8;
+            pointer-events: none !important;
         }
         .hidden {
             display: none !important;
